@@ -9,8 +9,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
+    <!-- DNS Prefetch for external resources -->
+    <link rel="dns-prefetch" href="https://api-maps.yandex.ru">
+    
     <!-- Yandex Maps API -->
-    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript" defer></script>
 </head>
 <body>
     <!-- Header -->
@@ -118,7 +121,7 @@
             <div class="footer-content">
                 <div class="footer-info">
                     <div class="footer-avatar">
-                        <img src="jon.png" alt="Поляков Егор Андреевич">
+                        <img src="jon.png" alt="Поляков Егор Андреевич" loading="lazy" width="80" height="80">
                     </div>
                     <div class="footer-text">
                         <h3>Адвокат Поляков Егор Андреевич</h3>
@@ -148,6 +151,6 @@
         </div>
     </footer>
 
-    <script src="js/script.js"></script>
+    <script src="js/script.js" defer></script>
 </body>
 </html>

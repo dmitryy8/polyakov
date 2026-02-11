@@ -15,8 +15,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
+    <!-- DNS Prefetch for external resources -->
+    <link rel="dns-prefetch" href="https://api-maps.yandex.ru">
+    
     <!-- Yandex Maps API -->
-    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript" defer></script>
     
     <!-- Eliminate render-blocking -->
     <style>
@@ -100,7 +103,7 @@
         </div>
         <div class="hero__container">
             <div class="hero__person-wrapper">
-                <img src="jon.png" alt="Адвокат Поляков Егор Андреевич" class="hero__person">
+                <img src="jon.png" alt="Адвокат Поляков Егор Андреевич" class="hero__person" fetchpriority="high" width="800" height="1000">
             </div>
             <div class="hero__content">
                 <h1 class="hero__name">
@@ -116,7 +119,7 @@
 
     <!-- About Section -->
     <section class="about" id="about">
-        <img src="vinida.png" alt="" class="about-decoration">
+        <img src="vinida.png" alt="" class="about-decoration" width="600" height="800">
         <div class="container">
             <h2 class="section-title">Обо мне</h2>
             <div class="about-content">
@@ -230,7 +233,7 @@
 
     <!-- Services Section -->
     <section class="services" id="services">
-        <img src="afaf.png" alt="" class="services-decoration">
+        <img src="afaf.png" alt="" class="services-decoration" loading="lazy">
         <div class="container">
             <h2 class="section-title">Виды услуг</h2>
             <div class="services-grid">
@@ -377,6 +380,7 @@
 
     <!-- Reviews Section -->
     <section class="reviews" id="reviews">
+        <img src="men2.png" alt="" class="reviews-decoration" loading="lazy" width="500" height="700">
         <div class="container">
             <h2 class="section-title">Отзывы</h2>
             <div class="reviews-slider-wrapper">
@@ -489,7 +493,7 @@
 
     <!-- Consultation Form Section -->
     <section class="consultation" id="consultation">
-        <img src="men.png" alt="" class="consultation-decoration">
+        <img src="men.png" alt="" class="consultation-decoration" width="600" height="800">
         <div class="container">
             <h2 class="section-title">Закажите консультацию</h2>
             <p class="consultation-subtitle">Я обязательно отвечу вам</p>
@@ -517,7 +521,7 @@
             <div class="footer-content">
                 <div class="footer-info">
                     <div class="footer-avatar">
-                        <img src="jon.png" alt="Поляков Егор Андреевич">
+                        <img src="jon.png" alt="Поляков Егор Андреевич" loading="lazy" width="80" height="80">
                     </div>
                     <div class="footer-text">
                         <h3>Адвокат Поляков Егор Андреевич</h3>
@@ -549,6 +553,6 @@
         </div>
     </footer>
 
-    <script src="js/script.js"></script>
+    <script src="js/script.js" defer></script>
 </body>
 </html>

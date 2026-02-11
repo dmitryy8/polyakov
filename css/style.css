@@ -715,11 +715,14 @@ body.dark-theme .moon-icon {
 
 .services-decoration {
     position: absolute;
-    right: -350px;
+    right: -200px;
     bottom: 0;
-    max-width: 1000px;
+    width: 600px;
+    height: auto;
     opacity: 0.8;
     z-index: 0;
+    transform: scale(1.5);
+    transform-origin: bottom right;
 }
 
 .services .container {
@@ -836,6 +839,16 @@ body.dark-theme .moon-icon {
     background-color: var(--bg-gray);
     padding: 80px 0;
     position: relative;
+}
+
+.reviews-decoration {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    max-width: 400px;
+    height: auto;
+    opacity: 0.8;
+    z-index: 0;
 }
 
 .reviews .container {
@@ -1060,6 +1073,7 @@ body.dark-theme .moon-icon {
     left: -150px;
     bottom: 0;
     max-width: 600px;
+    height: auto;
     opacity: 0.8;
     z-index: 0;
 }
@@ -1318,6 +1332,10 @@ body.dark-theme .moon-icon {
         grid-template-columns: 1fr;
     }
     
+    .reviews-decoration {
+        display: none;
+    }
+    
     .review-card {
         min-width: calc((100% - 30px) / 2);
         max-width: calc((100% - 30px) / 2);
@@ -1405,9 +1423,9 @@ body.dark-theme .moon-icon {
     .about-decoration {
         left: 50%;
         top: auto;
-        bottom: -50px;
+        bottom: -30px;
         transform: translateX(-50%);
-        max-width: 600px;
+        max-width: 500px;
         opacity: 0.9;
     }
     
@@ -1455,6 +1473,16 @@ body.dark-theme .moon-icon {
         padding: 60px 0;
     }
     
+    .services-decoration {
+        left: -50px;
+        right: auto;
+        bottom: -50px;
+        width: 500px;
+        opacity: 0.7;
+        transform: scale(1.5);
+        transform-origin: bottom left;
+    }
+    
     .consultation {
         padding: 50px 0 350px 0;
     }
@@ -1464,6 +1492,7 @@ body.dark-theme .moon-icon {
         right: auto;
         transform: none;
         max-width: 350px;
+        height: auto;
         bottom: -15px;
     }
     
