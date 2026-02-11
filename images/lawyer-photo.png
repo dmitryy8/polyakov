@@ -1,0 +1,76 @@
+<svg width="600" height="900" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="suitGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a365d;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0f1e3d;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="shirtGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f0f4f8;stop-opacity:1" />
+    </linearGradient>
+    
+    <radialGradient id="faceGrad" cx="50%" cy="40%">
+      <stop offset="0%" style="stop-color:#f5d5c8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e8c4b8;stop-opacity:1" />
+    </radialGradient>
+  </defs>
+  
+  <!-- Professional lawyer silhouette in business suit -->
+  
+  <!-- Body - Dark blue suit -->
+  <g transform="translate(300, 450)">
+    <!-- Shoulders and torso -->
+    <ellipse cx="0" cy="250" rx="140" ry="200" fill="url(#suitGrad)"/>
+    <rect x="-120" y="150" width="240" height="350" rx="20" fill="url(#suitGrad)"/>
+    
+    <!-- Left shoulder -->
+    <ellipse cx="-100" cy="200" rx="50" ry="80" fill="url(#suitGrad)"/>
+    <!-- Right shoulder -->
+    <ellipse cx="100" cy="200" rx="50" ry="80" fill="url(#suitGrad)"/>
+    
+    <!-- Shirt/Tie area -->
+    <path d="M -40 180 Q 0 170, 40 180 L 30 450 L -30 450 Z" fill="url(#shirtGrad)"/>
+    <path d="M -15 190 L 0 200 L 15 190 L 10 400 L -10 400 Z" fill="#1a365d" opacity="0.9"/>
+    
+    <!-- Jacket lapels -->
+    <path d="M -50 180 L -30 200 L -40 350 L -70 340 Z" fill="#0f1e3d"/>
+    <path d="M 50 180 L 30 200 L 40 350 L 70 340 Z" fill="#0f1e3d"/>
+    
+    <!-- Neck -->
+    <ellipse cx="0" cy="150" rx="35" ry="45" fill="url(#faceGrad)"/>
+    
+    <!-- Head -->
+    <ellipse cx="0" cy="80" rx="70" ry="85" fill="url(#faceGrad)"/>
+    
+    <!-- Hair -->
+    <ellipse cx="0" cy="30" rx="75" ry="50" fill="#2d3748"/>
+    <ellipse cx="-25" cy="40" rx="30" ry="35" fill="#2d3748"/>
+    <ellipse cx="25" cy="40" rx="30" ry="35" fill="#2d3748"/>
+    
+    <!-- Ears -->
+    <ellipse cx="-70" cy="85" rx="15" ry="20" fill="url(#faceGrad)"/>
+    <ellipse cx="70" cy="85" rx="15" ry="20" fill="url(#faceGrad)"/>
+    
+    <!-- Face features (subtle shadows) -->
+    <ellipse cx="-25" cy="65" rx="8" ry="10" fill="#2d3748" opacity="0.6"/>
+    <ellipse cx="25" cy="65" rx="8" ry="10" fill="#2d3748" opacity="0.6"/>
+    <path d="M -15 95 Q 0 105, 15 95" stroke="#2d3748" stroke-width="2" fill="none" opacity="0.4"/>
+    
+    <!-- Arms -->
+    <rect x="-160" y="200" width="45" height="280" rx="20" fill="url(#suitGrad)" transform="rotate(-10 -137 200)"/>
+    <rect x="115" y="200" width="45" height="280" rx="20" fill="url(#suitGrad)" transform="rotate(10 137 200)"/>
+    
+    <!-- Hands -->
+    <ellipse cx="-150" cy="470" rx="25" ry="30" fill="url(#faceGrad)"/>
+    <ellipse cx="150" cy="470" rx="25" ry="30" fill="url(#faceGrad)"/>
+  </g>
+  
+  <!-- Professional shadow effect -->
+  <ellipse cx="300" cy="890" rx="100" ry="10" fill="#000000" opacity="0.1"/>
+  
+  <!-- Watermark -->
+  <text x="300" y="880" font-family="Arial, sans-serif" font-size="12" fill="#cbd5e0" text-anchor="middle" opacity="0.3">
+    Замените на профессиональное фото
+  </text>
+</svg>

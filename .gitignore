@@ -1,0 +1,36 @@
+# Editor directories and files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS Files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+*.cache
+
+# Backups
+*.bak
+*.backup
+*~
+
+# Development files
+node_modules/
+npm-debug.log
+.env
+.env.local
+
+# Build outputs (if using build tools)
+dist/
+build/
+.cache/
+
+# Personal notes
+TODO.md
+NOTES.md

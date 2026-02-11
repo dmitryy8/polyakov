@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Практика - Адвокат Поляков</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="header-contacts">
+                    <div class="header-name">ПОЛЯКОВ<br>ЕГОР</div>
+                    <a href="tel:+77015030587" class="header-phone">+7 701 503 0587</a>
+                    <div class="header-messengers">
+                        <a href="#" class="messenger-link whatsapp" title="WhatsApp">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="messenger-link telegram" title="Telegram">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <nav class="nav">
+                    <a href="index.html" class="nav-link">Главная</a>
+                    <a href="services.html" class="nav-link">Услуги</a>
+                    <a href="about.html" class="nav-link">Об адвокате</a>
+                    <a href="practice.html" class="nav-link active">Практика</a>
+                    <a href="contacts.html" class="nav-link">Контакты</a>
+                </nav>
+                <button class="btn-consultation" onclick="window.location.href='index.html#consultation'">Консультация</button>
+                <button class="theme-toggle" onclick="toggleTheme()" title="Переключить тему">
+                    <svg class="theme-icon sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="5"/>
+                        <line x1="12" y1="1" x2="12" y2="3"/>
+                        <line x1="12" y1="21" x2="12" y2="23"/>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+                        <line x1="1" y1="12" x2="3" y2="12"/>
+                        <line x1="21" y1="12" x2="23" y2="12"/>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+                    </svg>
+                    <svg class="theme-icon moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+                    </svg>
+                </button>
+                <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <nav class="mobile-nav">
+            <a href="index.html" class="mobile-nav-link" onclick="closeMobileMenu()">Главная</a>
+            <a href="services.html" class="mobile-nav-link" onclick="closeMobileMenu()">Услуги</a>
+            <a href="about.html" class="mobile-nav-link" onclick="closeMobileMenu()">Об адвокате</a>
+            <a href="practice.html" class="mobile-nav-link" onclick="closeMobileMenu()">Практика</a>
+            <a href="contacts.html" class="mobile-nav-link" onclick="closeMobileMenu()">Контакты</a>
+        </nav>
+    </div>
+
+    <!-- Why Me Section -->
+    <section class="why-me" id="practice">
+        <div class="container">
+            <h2 class="section-title">Почему именно я?</h2>
+            <div class="advantages-grid">
+                <div class="advantage-card">
+                    <div class="advantage-icon">
+                        <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16 10H48V22V34C48 46 32 56 32 56C32 56 16 46 16 34V22V10Z" stroke="#34495e" stroke-width="1.5" stroke-linejoin="round"/>
+                            <path d="M32 10V56" stroke="#34495e" stroke-width="1" opacity="0.3"/>
+                        </svg>
+                    </div>
+                    <h3 class="advantage-title">Индивидуальная стратегия защиты</h3>
+                    <p class="advantage-description">Каждое дело требует детального анализа и продуманной тактики. Я разрабатываю персональную правовую стратегию с учетом всех обстоятельств и рисков.</p>
+                </div>
+                
+                <div class="advantage-card">
+                    <div class="advantage-icon">
+                        <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="22" y="28" width="20" height="24" rx="2" stroke="#34495e" stroke-width="1.5"/>
+                            <path d="M26 28V20C26 16.6863 28.6863 14 32 14C35.3137 14 38 16.6863 38 20V28" stroke="#34495e" stroke-width="1.5" stroke-linecap="round"/>
+                            <circle cx="32" cy="40" r="2.5" stroke="#34495e" stroke-width="1.5"/>
+                            <line x1="32" y1="42.5" x2="32" y2="46" stroke="#34495e" stroke-width="1.5" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="advantage-title">Конфиденциальность и этика</h3>
+                    <p class="advantage-description">Гарантирую полное соблюдение адвокатской тайны, профессиональной этики и защиту информации на всех этапах сотрудничества.</p>
+                </div>
+                
+                <div class="advantage-card">
+                    <div class="advantage-icon">
+                        <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M28 18L31 26H39L33 31L35 39L28 35L21 39L23 31L17 26H25L28 18Z" stroke="#34495e" stroke-width="1.5" stroke-linejoin="round"/>
+                            <path d="M52 18L55 26H63L57 31L59 39L52 35L45 39L47 31L41 26H49L52 18Z" stroke="#34495e" stroke-width="1.5" stroke-linejoin="round"/>
+                            <path d="M16 46L19 54H27L21 59L23 67L16 63L9 67L11 59L5 54H13L16 46Z" stroke="#34495e" stroke-width="1.5" stroke-linejoin="round"/>
+                            <path d="M40 46L43 54H51L45 59L47 67L40 63L33 67L35 59L29 54H37L40 46Z" stroke="#34495e" stroke-width="1.5" stroke-linejoin="round"/>
+                            <path d="M64 46L67 54H75L69 59L71 67L64 63L57 67L59 59L53 54H61L64 46Z" stroke="#34495e" stroke-width="1.5" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="advantage-title">Практический судебный опыт</h3>
+                    <p class="advantage-description">Имею опыт представления интересов доверителей в судах различных инстанций. Работаю на результат, а не ради формального процесса.</p>
+                </div>
+                
+                <div class="advantage-card">
+                    <div class="advantage-icon">
+                        <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="32" cy="32" r="18" stroke="#34495e" stroke-width="1.5"/>
+                            <path d="M24 32L29 37L40 26" stroke="#34495e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="advantage-title">Ответственность и прозрачность</h3>
+                    <p class="advantage-description">Честно оцениваю перспективы дела, заранее обозначаю возможные риски и поддерживаю постоянную связь с доверителем.</p>
+                </div>
+            </div>
+            
+            <h3 style="text-align: center; margin-top: 60px; margin-bottom: 40px; font-size: 28px; color: #2c3e50; font-weight: 500;">И еще много чего...</h3>
+            
+            <div class="advantages-grid">
+                <div class="advantage-card advantage-card--no-icon">
+                    <h3 class="advantage-title">Принципиальная правовая позиция</h3>
+                    <p class="advantage-description">Последовательно и аргументированно отстаиваю интересы доверителя, используя исключительно законные и профессиональные методы защиты.</p>
+                </div>
+                
+                <div class="advantage-card advantage-card--no-icon">
+                    <h3 class="advantage-title">Комплексный подход к делу</h3>
+                    <p class="advantage-description">Анализирую ситуацию всесторонне: от правовой базы до возможных процессуальных последствий, чтобы выстроить максимально эффективную линию защиты.</p>
+                </div>
+                
+                <div class="advantage-card advantage-card--no-icon">
+                    <h3 class="advantage-title">Подготовка доказательной базы</h3>
+                    <p class="advantage-description">Тщательно работаю с документами, доказательствами и правовой аргументацией, уделяя внимание каждой детали.</p>
+                </div>
+                
+                <div class="advantage-card advantage-card--no-icon">
+                    <h3 class="advantage-title">Представительство на всех стадиях</h3>
+                    <p class="advantage-description">Осуществляю сопровождение дела на всех этапах — от консультации до вынесения судебного решения и его исполнения.</p>
+                </div>
+                
+                <div class="advantage-card advantage-card--no-icon">
+                    <h3 class="advantage-title">Оперативность реагирования</h3>
+                    <p class="advantage-description">Своевременно принимаю процессуальные решения и обеспечиваю быструю реакцию на изменения в ходе дела.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <div class="footer-avatar">
+                        <img src="jon.png" alt="Поляков Егор Андреевич">
+                    </div>
+                    <div class="footer-text">
+                        <h3>Адвокат Поляков Егор Андреевич</h3>
+                        <p><a href="tel:+77015030587" style="color: white; text-decoration: none;">+7 701 503 0587</a></p>
+                        <p>lawyer@example.com</p>
+                        <p style="margin-top: 10px;">&copy; Адвокат Поляков 2026. Все права защищены</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
